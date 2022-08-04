@@ -1,0 +1,31 @@
+package com.oops;
+
+class NewBase{
+	String color = "White";
+	void show()
+	{
+		System.out.println("Base class color is " + " " + color);
+	}
+	
+}
+
+class NewChild extends NewBase{
+	String color = "Red";
+	void show()
+	{
+		super.show();
+		System.out.println("Child class color is " + " " + color);
+		System.out.println("Base class color is " + " " + super.color);
+	}
+}
+public class SuperKeyword {
+
+	public static void main(String[] args) {
+		NewChild obj = new NewChild();
+		System.out.println(obj.color);
+		obj.show();
+		
+
+	}
+
+}

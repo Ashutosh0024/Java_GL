@@ -1,0 +1,29 @@
+package com.oops;
+
+class Ebase{
+	private String name;
+	private int id;
+	public Ebase(String name, int id) {
+		super();
+		this.name = name;
+		this.id = id;
+	}
+	@Override
+	public String toString() {
+		return "{" + "\n"
+				+ "name=" + name + "\n"+ ", "
+						+ "id=" + id + "\n" +
+				"}";
+	}
+	
+	
+}
+public class Encapsulation {
+	public static void main(String[] args) {
+		Ebase obj = new Ebase("Ashutosh", 21);
+		System.out.println(obj.toString());
+		
+
+	}
+
+}

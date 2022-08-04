@@ -1,0 +1,10 @@
+make to classes patient
+use map to store id and name
+operations:
+       get patient details
+       add patient
+       discharge patient
+
+if number_of_wards == full
+dont take patient in hospital
+

@@ -1,0 +1,36 @@
+package com.oops;
+
+class Ebase{
+	private String name;
+	private int id;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	@Override
+	public String toString() {
+		return "[name=" + name + ", id=" + id];
+	}
+	
+	
+}
+public class Encapsulation {
+	public static void main(String[] args) {
+		Ebase obj = new Ebase();
+		obj.setName("Ashutosh");
+		obj.setId(21);
+		System.out.println(obj.getName());
+		System.out.println(obj.getId());
+		
+
+	}
+
+}
